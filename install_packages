@@ -1,0 +1,12 @@
+name: Install Packages
+    package:
+      name: "{{item}}"
+      state: present          #absent     latest
+    with_items:
+    - vsftpd
+    - lftp
+    - telnet
+    - httpd 
+    - elinks
+    - wget
+    - curl 
